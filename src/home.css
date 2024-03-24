@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url("./components/back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: 2px 2px 9px black;
+  border-radius: 12px;
+}
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid #70e6f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cityinput {
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+.serach-icon {
+  padding: 10px;
+  height: 30px;
+  cursor: pointer;
+  color: red;
+}
+.search-icon img {
+  margin: 5px;
+}
+.image {
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.image img {
+  width: 160px;
+  height: 160px;
+}
+.temp,
+.location,
+.country {
+  margin: 5px;
+  font-size: 35px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.temp {
+  font-weight: 500;
+}
+.location {
+  color: yellow;
+  font-weight: 500;
+  font-size: 40px;
+}
+.country {
+  font-size: 18px;
+  color: #2c2c2c;
+  font-weight: 500;
+}
+.cord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.cord div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cord div span {
+  font-size: 15px;
+}
+.cord div span :nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  padding-top: 5px;
+}
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.element {
+  text-align: center;
+}
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+.copyright span {
+  color: #333;
+}
+.load-message,
+.citynotfound,
+.error-message {
+  margin-top: 10px;
+  color: #888;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
